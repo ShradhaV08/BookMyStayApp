@@ -46,6 +46,7 @@ class BookStayApp {
         history.addReservation(new Reservation("Shlok", "Double"));
         history.addReservation(new Reservation("Vani", "Suite"));
 
+        // Generate report
         BookingReportService reportService = new BookingReportService();
         reportService.generateReport(history.getReservations());
     }
